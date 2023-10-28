@@ -6,14 +6,35 @@
     <title>Paw-park</title>
     <style>
         body{
-            background-image: url(blurry_forrest.jpg);
-            background-repeat: no-repeat;
-            background-size:cover;
-            width: 100vw;
+        background-image: url(blurry_forrest.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 100vw;
         }
+
+        div{
+            margin:0;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        .row {
+        margin: 0 auto;
+        width:fit-content;
+        }
+        
+        .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+        }
+
         h1, h2, h3, p{
             color: rgb(74, 83, 25);
         }
+
         .header{
             width:fit-content;
             padding: 0.5%;
@@ -23,98 +44,140 @@
         }
         .about_us{
             margin: 0 auto;
-            width: 50%;
+            width: 100%;
+        }
+        .openingHours_and_prices{
+        padding: 5%;
+        border-radius: 20px;
+        background-color: rgb(227, 227, 84);
+        }
+        .animal_picture{
+            height:200px;
+        }
+        .animal_name{
+            width:5px;
+            height: 200px;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .right{
+        margin-right:0;
+        }
+        pictures_right{
+            position: relative;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Welcome to Paw-Park!</h1>
-    </div>
-    <div class="about_us">
-        <br>
-        <h2>We save wildlife and inspire a passion for nature - one person, one family at a time.</h2>
-        <h2>Animals at Dublin Zoo live enriched lives in natural social groups, they are fit and healthy, able to breed and raise their own young. They can be observed in naturalistic spaces with vegetation, substrate and water features that reflects their native habitat.</h2>
-    </div>
-    <div>
-        <br><h3 style="color: rgb(54, 60, 17); margin:0 auto; width:fit-content;">We're open all year round!</h3>
-        <div class="row">
-            <div class="column">
-              <table>
-                <tr>
-                    <th>Opening Hours</th>
-                </tr>
-                <tr>
-                  <th>DAY</th>
-                  <th>HOURS</th>
-                </tr>
-                <tr>
-                  <td>Sunday:</td>
-                  <td>9:00 - 17:00</td>
-                </tr>
-                <tr>
-                  <td>Monday:</td>
-                  <td>9:00-18:00</td>
-                </tr>
-                <tr>
-                  <td>Tuesday:</td>
-                  <td>9:00-18:00</td>
-                </tr>
-                <tr>
-                  <td>Wednesday:</td>
-                  <td>9:00-18:00</td>
-                </tr>
-                <tr>
-                  <td>Thursday:</td>
-                  <td>9:00-18:00</td>
-                </tr>
-                <tr>
-                  <td>Friday:</td>
-                  <td>9:00-18:00</td>
-                </tr>
-                <tr>
-                  <td>Saturday:</td>
-                  <td>9:00-19:00</td>
-                </tr>
-              </table>
+    <table>
+        <tr>
+            <td width="30%;">
+                <div><img class="animal_picture" src="giraffe.jpg" alt="giraffe"><span class="animal_name">&nbsp;Giraffe</span></div>
+                <div><img class="animal_picture" src="giant_panda.jpg" alt="giant panda"><span class="animal_name">&nbsp;Giant panda</span></div>
+                <div><img class="animal_picture" src="zebra.jpg" alt="zebra"><span class="animal_name">&nbsp;Zebra</span></div>
+                <div><img class="animal_picture" src="owl.jpg" alt="owl"><span class="animal_name">&nbsp;Owl</span></div>
+            </td>
+            <td width="40%;">
             </div>
-            <div class="column">
-              <table>
-                <tr>
-                    <th>Our Prices</th>
-                </tr>
-                <tr>
-                  <th>TICKET</th>
-                  <th>GATE-PRICE</th>
-                  <TH>ONLINE-PRICE</TH>
-                </tr>
-                <tr>
-                  <td>Adult:</td>
-                  <td>€22.50</td>
-                  <td>€21.40</td>
-                </tr>
-                <tr>
-                  <td>Children under 3:</td>
-                  <td>FREE</td>
-                  <td>FREE</td>
-                </tr>
-                <tr>
-                  <td>Children aged 3-14:</td>
-                  <td>€17.00</td>
-                  <td>€16.30</td>
-                </tr>
-                  <td>Children aged 15-18:</td>
-                  <td>€19.50</td>
-                  <td>€19.00</td>
-                </tr>
-                <tr>
-                  <td>Senior Citizens (over 65)</td>
-                  <td>€20.00</td>
-                  <td>€19.20</td>
-                </tr>
-              </table>
+            <div class="header">
+                <h1>Welcome to Paw-Park!</h1>
             </div>
-          </div>
-    </div>
+            <div class="about_us">
+                <br>
+                <h2>We save wildlife and inspire a passion for nature - one person, one family at a time.</h2>
+                <h2>Animals at Paw-Park live enriched lives in natural social groups, they are fit and healthy, able to breed and raise their own young. They can be observed in naturalistic spaces with vegetation, substrate and water features that reflects their native habitat.</h2>
+            </div>
+            <div>
+                <h3 style="font-size: 20px; color: rgb(54, 60, 17); margin:0 auto; width:fit-content;">We're open all year round!</h3>
+                <div class="row"><br><br>
+                    <div class="column">
+                    <table class="openingHours_and_prices">
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Opening Hours</th>
+                        </tr>
+                        <tr>
+                        <th>DAY</th>
+                        <th>HOURS</th>
+                        </tr>
+                        <tr>
+                        <td>Sunday:</td>
+                        <td>9:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                        <td>Monday:</td>
+                        <td>9:00-18:00</td>
+                        </tr>
+                        <tr>
+                        <td>Tuesday:</td>
+                        <td>9:00-18:00</td>
+                        </tr>
+                        <tr>
+                        <td>Wednesday:</td>
+                        <td>9:00-18:00</td>
+                        </tr>
+                        <tr>
+                        <td>Thursday:</td>
+                        <td>9:00-18:00</td>
+                        </tr>
+                        <tr>
+                        <td>Friday:</td>
+                        <td>9:00-18:00</td>
+                        </tr>
+                        <tr>
+                        <td>Saturday:</td>
+                        <td>9:00-19:00</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="column">
+                    <table class="openingHours_and_prices">
+                        <tr>
+                            <th>Our Prices</th>
+                        </tr>
+                        <tr>
+                        <th>TICKET</th>
+                        <th>GATE-PRICE</th>
+                        <TH>ONLINE-PRICE</TH>
+                        </tr>
+                        <tr>
+                        <td>Adult:</td>
+                        <td>€22.50</td>
+                        <td>€21.40</td>
+                        </tr>
+                        <tr>
+                        <td>Children under 3:</td>
+                        <td>FREE</td>
+                        <td>FREE</td>
+                        </tr>
+                        <tr>
+                        <td>Children aged 3-14:</td>
+                        <td>€17.00</td>
+                        <td>€16.30</td>
+                        </tr>
+                        <td>Children aged 15-18:</td>
+                        <td>€19.50</td>
+                        <td>€19.00</td>
+                        </tr>
+                        <tr>
+                        <td>Senior Citizens (over 65)</td>
+                        <td>€20.00</td>
+                        <td>€19.20</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            </td>
+            <td width="30%;" class="pictures_right">
+                <div style="position:absolute; right:0; top:5px;"><span class="animal_name">Frog&nbsp;</span><img class="animal_picture, right" src="frog.jpg " alt="frog" style="height:200px;"></div>
+                <div style="position:absolute; right:0; top:215px;"><span class="animal_name">Peacock&nbsp;</span><img class="animal_picture, right" src="peacock.jpg" alt="peacock" style="height:200px;"></div>
+                <div style="position:absolute; right:0; top:420px;"><span class="animal_name">Penguin&nbsp;</span><img class="animal_picture, right" src="penguin.jpg" alt="pengui" style="height:200px;"></div>
+                <div style="position:absolute; right:0; top:625px;"><span class="animal_name">Tiger&nbsp;</span><img class="animal_picture, right" src="tiger.jpg" alt="tiger" style="height:200px;"></div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
