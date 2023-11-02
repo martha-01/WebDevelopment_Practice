@@ -17,7 +17,7 @@ I live with my husband and our 4 children:
 
 All 4 of them have something to do with music:musical_note: (they have performed at prestigious concert halls in Budapest, some in Europe, + Bence has a little experience in the film industry;-). Now two of them are university students, one is striving to be a professional musician and one is studying at a choir school.\
 They are the ones that the previous twenty-some years of my life were mainly about.\
-I also like music, plus doing anything connected to Maths and logical thinking. That's why I'm venturing into the field of web-development and **software testing**.
+I also like music, plus doing anything connected with Maths and logical thinking. That's why I'm venturing into the field of web-development and **software testing**.
 
 :point_right:\
 My main strengths are:
