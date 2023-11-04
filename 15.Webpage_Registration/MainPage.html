@@ -23,6 +23,9 @@
             padding: 5px;
             border: 1px solid black;
         }
+        #deliveryFeeIncluded {
+            font-size:x-large;
+        }
     </style>
     <script>
         let sum = 0;
@@ -39,6 +42,11 @@
             newRow.appendChild(newName);
             newRow.appendChild(newPrice);
             document.getElementById('cart').appendChild(newRow);
+        }
+        function displayTotalPriceWithDelivery(optionClicked){
+            let deliveryFee = document.getElementById(optionClicked).value;
+            let totalSum = Number(sum) + Number(deliveryFee);
+            document.getElementById('deliveryFeeIncluded').innerText = "  €"+totalSum;
         }
     </script>
 </head>
@@ -69,16 +77,16 @@
             </tr>
         </table><br>
         <div id="total_cell">
-            <p>Total: € <spam id="total">0</spam>.-</p>
+            <p>Total: € <spam id="total">0</spam>.- + delivery fee =&nbsp;&nbsp;<spam id="deliveryFeeIncluded"></spam></p>
             <p>Please select where you want the delivery:</p>
         </div><br>
-        <form action="">
-            <input type="radio" name="deliveryFee" id="within_city">
+        <form>
+            <input type="radio" name="deliveryFee" id="within_city" value="0" onclick="displayTotalPriceWithDelivery(this.id);">
             <label for="within_city">Within the city: FREE</label><br>
-            <input type="radio" name="deliveryFee" id="within10">
-            <label for="within10">Within 10 km: € 10.-</label><br>
-            <input type="radio" name="deliveryFee" id="within20">
-            <label for="within20">Within 20 km: € 20.-</label><br>
+            <input type="radio" name="deliveryFee" id="within10" value="10" onclick="displayTotalPriceWithDelivery(this.id);">
+            <label for="within10">Within 10 km: €10.-</label><br>
+            <input type="radio" name="deliveryFee" id="within20" value="20" onclick="displayTotalPriceWithDelivery(this.id);">
+            <label for="within20">Within 20 km: €20.-</label><br>
         </form>
     </div>
 </body>
