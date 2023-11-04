@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        input {
+            margin: 5px;
+        }
+      .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+  
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+  
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+</head>
+<body>
+    <a class="tooltip" href="./MainPage.html" target="_self" title="Back to MainPage">
+        <img src="webshop_icon.png" alt="webshop-icon" width="50px;">
+        <span class="tooltiptext">Back to Main page</span>
+    </a>
+    <h2>Register</h2>
+    <p>Please, fill out the details below:</p>
+    <form action="ConfirmationPage.html" style="width:600px;">
+        <fieldset>
+            <label for="name">Name:</label>
+            <input id="name" type="text">
+            <label for="password">Password:</label>
+            <input id="password" type="password">
+        </fieldset>
+        <fieldset>
+            <label for="email">Email:</label>
+            <input id="email" type="email"><br>
+            <label for="telephone">Telephone:</label>
+            <input id="telephone" type="tel"><br>
+            <label for="address">Address:</label>
+            <input id="address" type="text"><br>
+            <label for="birthday">Your Birthday:</label>
+            <input id="birthday" type="date">
+        </fieldset>
+        <input type="submit" value="Register!">
+    </form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage_Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        button {
+            padding:5px;
+        }
+        table, td {
+            border: 1px solid #333;
+        }
+        #total_cell {
+            width:fit-content;
+            background-color: gold;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        let sum = 0;
+        function displayNewItem(clicked_id){
+            sum += Number(document.getElementById(clicked_id).value);
+            document.getElementById('total').innerHTML = sum;
+            let newRow = document.createElement('tr');
+            let newName = document.createElement('td');
+            let newNameValue = document.createTextNode(clicked_id);
+            newName.appendChild(newNameValue);
+            let newPrice = document.createElement('td');
+            let newPriceValue = document.createTextNode(document.getElementById(clicked_id).value + ".-");
+            newPrice.appendChild(newPriceValue);
+            newRow.appendChild(newName);
+            newRow.appendChild(newPrice);
+            document.getElementById('cart').appendChild(newRow);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Welcome to our WebShop</h1>
+        <p>In order to purchase, first you have to register (in case you haven't done so yet).</p>
+        <button onclick="window.open('./RegistrationPage.html', '_self')">Register</button>
+        <br><br>
+        <h2>Our products:</h2>
+        <table cellspacing="20">
+            <tr>
+                <td><button id="LiquidSoap" value="10" onclick="displayNewItem(this.id);">LiquidSoap</button><p>Price: &euro;10</p></td>
+                <td><button id="Shampoo" value="15" onclick="displayNewItem(this.id);">Shampoo</button><p>Price: &euro;15</p></td>
+                <td><button id="Conditioner" value="13" onclick="displayNewItem(this.id);">Conditioner</button><p>Price: &euro;13</p></td>
+            </tr>
+            <tr>
+                <td><button id="Towel" value="20" onclick="displayNewItem(this.id);">Towel</button><p>Price: &euro;20</p></td>
+                <td><button id="Sponge" value="8" onclick="displayNewItem(this.id);">Sponge</button><p>Price: &euro;8</p></td>
+                <td><button id="NailClipper" value="12" onclick="displayNewItem(this.id);">NailClipper</button><p>Price: &euro;12</p></td>
+            </tr>
+        </table>
+        <h3>Here's the list of purchased items so far:</h3>
+        <table id="cart">
+            <tr>
+                <th>Name:</th>
+                <th>Price:</th>
+            </tr>
+        </table><br>
+        <div id="total_cell">
+            <p>Total: € <spam id="total">0</spam>.-</p>
+            <p>Please select where you want the delivery:</p>
+        </div><br>
+        <form action="">
+            <input type="radio" name="deliveryFee" id="within_city">
+            <label for="within_city">Within the city: FREE</label><br>
+            <input type="radio" name="deliveryFee" id="within10">
+            <label for="within10">Within 10 km: € 10.-</label><br>
+            <input type="radio" name="deliveryFee" id="within20">
+            <label for="within20">Within 20 km: € 20.-</label><br>
+        </form>
+    </div>
+</body>
+</html>
