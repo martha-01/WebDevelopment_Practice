@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.DaysMonthsYears</title>
+    <style>
+        span{
+            margin:0;
+            padding:0;
+        }
+    </style>
+    <script>
+        function dayOfTheWeekSelected(day){
+            document.getElementById("dayOfTheWeek").textContent="Today is " + day + "!";
+            document.getElementById("dayOfTheWeek").style.backgroundColor="DarkCyan";
+            document.getElementById("dayOfTheWeek").style.color="white";
+            document.getElementById("dayOfTheWeek").style.width="fit-content";
+            document.getElementById("dayOfTheWeek").style.fontSize="25px";
+            document.getElementById("dayOfTheWeek").style.padding="10px";
+            document.getElementById(day).style.fontWeight ="bold";
+            if (day == "Sunday"){                
+            document.getElementById(day).style.backgroundColor ="red";
+            document.getElementById(day).style.color ="white";
+            document.getElementById("dayOfTheWeek").style.backgroundColor ="red"
+            } else{
+                document.getElementById(day).style.backgroundColor ="DarkCyan";
+            document.getElementById(day).style.color ="white";
+            }
+        }
+        function daySelected(day){
+            document.getElementById('Day').textContent="It's the " + day;
+            document.getElementById("Day").style.backgroundColor="DarkCyan";
+            document.getElementById("Day").style.color="white";
+            document.getElementById("Day").style.width="fit-content";
+            document.getElementById("Day").style.fontSize="25px";
+            document.getElementById("Day").style.padding="10px";
+            document.getElementById(day).style.fontWeight ="bold";
+            document.getElementById(day).style.backgroundColor="DarkCyan";
+            document.getElementById(day).style.color="white";
+        }
+        function monthSelected(month){
+            document.getElementById('Month').textContent = "of " + month;
+            document.getElementById("Month").style.backgroundColor="DarkCyan";
+            document.getElementById("Month").style.color="white";
+            document.getElementById("Month").style.width="fit-content";
+            document.getElementById("Month").style.fontSize="25px";
+            document.getElementById("Month").style.padding="10px";
+            document.getElementById(month).style.fontWeight ="bold";
+            document.getElementById(month).style.backgroundColor="DarkCyan";
+            document.getElementById(month).style.color="white";
+        }
+        function yearSelected(year){
+            document.getElementById('Year').textContent = ", " + year + ".";            
+            document.getElementById("Year").style.backgroundColor="DarkCyan";
+            document.getElementById("Year").style.color="white";
+            document.getElementById("Year").style.width="fit-content";
+            document.getElementById("Year").style.fontSize="25px";
+            document.getElementById("Year").style.padding="10px";
+            document.getElementById(year).style.fontWeight ="bold";
+            document.getElementById(year).style.backgroundColor="DarkCyan";
+            document.getElementById(year).style.color="white";
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <center>
+    <h2>Days of the Week</h2>
+    <div>
+        <button id="Monday" onclick=dayOfTheWeekSelected("Monday")>Click me!</button>
+        <button id="Tuesday" onclick=dayOfTheWeekSelected('Tuesday')>Click me!</button>
+        <button id="Wednesday" onclick=dayOfTheWeekSelected('Wednesday')>Click me!</button>
+        <button id="Thursday" onclick=dayOfTheWeekSelected('Thursday')>Click me!</button>
+        <button id="Friday" onclick=dayOfTheWeekSelected('Friday')>Click me!</button>
+        <button id="Saturday" onclick=dayOfTheWeekSelected('Saturday')>Click me!</button>
+        <button id="Sunday" onclick=dayOfTheWeekSelected('Sunday')>Click me!</button>
+    </div><br>
+    <p id="dayOfTheWeek">Click on one of the buttons above.</p>
+    <br>
+    <h2>Days of the Month</h2>
+    <div>
+        <button id="1st" onclick=daySelected('1st')>Click me!</button>
+        <button id="2nd" onclick=daySelected('2nd')>Click me!</button>
+        <button id="3rd" onclick=daySelected('3rd')>Click me!</button>
+        <button id="4th" onclick=daySelected('4th')>Click me!</button>
+        <button id="5th" onclick=daySelected('5th')>Click me!</button>
+        <button id="6th" onclick=daySelected('6th')>Click me!</button>
+        <button id="7th" onclick=daySelected('7th')>Click me!</button>
+        <button id="8th" onclick=daySelected('8th')>Click me!</button>
+        <button id="9th" onclick=daySelected('9th')>Click me!</button>
+        <button id="10th" onclick=daySelected('10th')>Click me!</button><br>
+        <button id="11th" onclick=daySelected('11th')>Click me!</button>
+        <button id="12th" onclick=daySelected('12th')>Click me!</button>
+        <button id="13th" onclick=daySelected('13th')>Click me!</button>
+        <button id="14th" onclick=daySelected('14th')>Click me!</button>
+        <button id="15th" onclick=daySelected('15th')>Click me!</button>
+        <button id="16th" onclick=daySelected('16th')>Click me!</button>
+        <button id="17th" onclick=daySelected('17th')>Click me!</button>
+        <button id="18th" onclick=daySelected('18th')>Click me!</button>
+        <button id="19th" onclick=daySelected('19th')>Click me!</button>
+        <button id="20th" onclick=daySelected('20th')>Click me!</button><br>
+        <button id="21st" onclick=daySelected('21st')>Click me!</button>
+        <button id="22nd" onclick=daySelected('22nd')>Click me!</button>
+        <button id="23rd" onclick=daySelected('23rd')>Click me!</button>
+        <button id="24th" onclick=daySelected('24th')>Click me!</button>
+        <button id="25th" onclick=daySelected('25th')>Click me!</button>
+        <button id="26th" onclick=daySelected('26th')>Click me!</button>
+        <button id="27th" onclick=daySelected('27th')>Click me!</button>
+        <button id="28th" onclick=daySelected('28th')>Click me!</button>
+        <button id="29th" onclick=daySelected('29th')>Click me!</button>
+        <button id="30th" onclick=daySelected('30th')>Click me!</button>
+        <button id="31st" onclick=daySelected('31st')>Click me!</button><br><br>
+        <h2>Months of the Year</h2>
+        <button id="January" onclick=monthSelected('January')>Click me!</button>
+        <button id="February" onclick=monthSelected('February')>Click me!</button>
+        <button id="March" onclick=monthSelected('March')>Click me!</button>
+        <button id="April" onclick=monthSelected('April')>Click me!</button>
+        <button id="May" onclick=monthSelected('May')>Click me!</button>
+        <button id="June" onclick=monthSelected('June')>Click me!</button>
+        <button id="July" onclick=monthSelected('July')>Click me!</button>
+        <button id="August" onclick=monthSelected('August')>Click me!</button>
+        <button id="September" onclick=monthSelected('September')>Click me!</button>
+        <button id="October" onclick=monthSelected('October')>Click me!</button>
+        <button id="November" onclick=monthSelected('November')>Click me!</button>
+        <button id="December" onclick=monthSelected('December')>Click me!</button>
+        <h2>Years</h2>
+        <button id="2020" onclick=yearSelected('2020')>Click me!</button>
+        <button id="2021" onclick=yearSelected('2021')>Click me!</button>
+        <button id="2022" onclick=yearSelected('2022')>Click me!</button>
+        <button id="2023" onclick=yearSelected('2023')>Click me!</button>
+        <button id="2024" onclick=yearSelected('2024')>Click me!</button>
+        <button id="2025" onclick=yearSelected('2025')>Click me!</button>
+        <button id="2026" onclick=yearSelected('2026')>Click me!</button>
+        <button id="2027" onclick=yearSelected('2027')>Click me!</button>
+        <button id="2028" onclick=yearSelected('2028')>Click me!</button>
+        <button id="2029" onclick=yearSelected('2029')>Click me!</button>
+        <button id="2030" onclick=yearSelected('2030')>Click me!</button>
+    </div>
+    <p><span id="Day">Click on one of the buttons above.</span><span id="Month"></span><span id="Year"></span></p>
+</center>
+</body>
+</html>
+
+    <!--
+    function decolour(day){
+        document.getElementById("resulttext").textContent="Click on one of the buttons below.";
+        document.getElementById(day).style.backgroundColor ="white";
+        document.getElementById(day).style.color ="black";
+        document.getElementById(day).style.fontWeight ="none";
+    }
+    -->
+
+    <!--
+    <div>
+        <button id="Monday_de" onclick=decolour('Monday')>Reset me!</button>
+        <button id="Tuesday_de" onclick=decolour('Tuesday')>Reset me!</button>
+        <button id="Wednesday_de" onclick=decolour('Wednesday')>Reset me!</button>
+        <button id="Thursday_de" onclick=decolour('Thursday')>Reset me!</button>
+        <button id="Friday_de" onclick=decolour('Friday')>Reset me!</button>
+        <button id="Saturday_de" onclick=decolour('Saturday')>Reset me!</button>
+        <button id="Sunday_de" onclick=decolour('Sunday')>Reset me!</button>
+    </div>
+    -->

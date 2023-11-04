@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.lightBulb</title>
+    <style>
+        button{
+            font-size: 25px;
+        }
+        #on{
+            background-color: rgb(255, 221, 0);
+        }
+        #off{
+            background-color: black;
+            color:rgb(255, 221, 0);
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>A 'Lightening' Experience</h1>
+        <img id="bulpimage" src="bulb-off.jpg" alt="lightBulb">
+        <div>
+            <button id="on" onclick="document.getElementById('bulpimage').src='./bulb-on.gif'">Turn on the light!</button>
+            <button id="off" onclick="document.getElementById('bulpimage').src='./bulb-off.jpg'">Turn off the light!</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.TreasureHunt</title>
+    <script>
+        let winnerButton = 25;
+        function buttonSelected(selectedNumber){
+            if (selectedNumber != winnerButton) {
+                document.getElementById("message").textContent="You're on Button "+selectedNumber+". The treasure is not here.";
+                document.getElementById("message").style.backgroundColor ="red";
+                document.getElementById("message").style.color ="white";
+                document.getElementById(selectedNumber).style.backgroundColor="red";
+                document.getElementById(selectedNumber).style.color="white";
+                document.getElementById(selectedNumber).style.fontWeight="bold";
+            } else {
+                document.getElementById("message").textContent="Yeah!!! You got it! Here's the Treasure!";
+                document.getElementById("message").style.backgroundColor ="green";
+                document.getElementById("message").style.color ="white";
+                document.getElementById(selectedNumber).style.backgroundColor="green";
+                document.getElementById(selectedNumber).style.color="white";
+                document.getElementById(selectedNumber).style.fontWeight="bold";
+                return
+            }
+        }
+    </script>
+</head>
+<body style="text-align:center;">
+    <h1>Treasure Hunt</h1>
+    <button id="1" onclick=buttonSelected(1)>Button 01</button>
+    <button id="2" onclick=buttonSelected(2)>Button 02</button>
+    <button id="3" onclick=buttonSelected(3)>Button 03</button>
+    <button id="4" onclick=buttonSelected(4)>Button 04</button>
+    <button id="5" onclick=buttonSelected(5)>Button 05</button>
+    <button id="6" onclick=buttonSelected(6)>Button 06</button>
+    <button id="7" onclick=buttonSelected(7)>Button 07</button><br>
+    <button id="8" onclick=buttonSelected(8)>Button 08</button>
+    <button id="9" onclick=buttonSelected(9)>Button 09</button>
+    <button id="10" onclick=buttonSelected(10)>Button 10</button>
+    <button id="11" onclick=buttonSelected(11)>Button 11</button>
+    <button id="12" onclick=buttonSelected(12)>Button 12</button>
+    <button id="13" onclick=buttonSelected(13)>Button 13</button>
+    <button id="14" onclick=buttonSelected(14)>Button 14</button><br>
+    <button id="15" onclick=buttonSelected(15)>Button 15</button>
+    <button id="16" onclick=buttonSelected(16)>Button 16</button>
+    <button id="17" onclick=buttonSelected(17)>Button 17</button>
+    <button id="18" onclick=buttonSelected(18)>Button 18</button>
+    <button id="19" onclick=buttonSelected(19)>Button 19</button>
+    <button id="20" onclick=buttonSelected(20)>Button 20</button>
+    <button id="21" onclick=buttonSelected(21)>Button 21</button><br>
+    <button id="22" onclick=buttonSelected(22)>Button 22</button>
+    <button id="23" onclick=buttonSelected(23)>Button 23</button>
+    <button id="24" onclick=buttonSelected(24)>Button 24</button>
+    <button id="25" onclick=buttonSelected(25)>Button 25</button>
+    <button id="26" onclick=buttonSelected(26)>Button 26</button>
+    <button id="27" onclick=buttonSelected(27)>Button 27</button>
+    <button id="28" onclick=buttonSelected(28)>Button 28</button><br>
+    <button id="29" onclick=buttonSelected(29)>Button 29</button>
+    <button id="30" onclick=buttonSelected(30)>Button 30</button>
+    <button id="31" onclick=buttonSelected(31)>Button 31</button>
+    <button id="32" onclick=buttonSelected(32)>Button 32</button>
+    <button id="33" onclick=buttonSelected(33)>Button 33</button>
+    <button id="34" onclick=buttonSelected(34)>Button 34</button>
+    <button id="35" onclick=buttonSelected(35)>Button 35</button><br>
+    <button id="36" onclick=buttonSelected(36)>Button 36</button>
+    <button id="37" onclick=buttonSelected(37)>Button 37</button>
+    <button id="38" onclick=buttonSelected(38)>Button 38</button>
+    <button id="39" onclick=buttonSelected(39)>Button 39</button>
+    <button id="40" onclick=buttonSelected(40)>Button 40</button>
+    <button id="41" onclick=buttonSelected(41)>Button 41</button>
+    <button id="42" onclick=buttonSelected(42)>Button 42</button><br>
+    <button id="43" onclick=buttonSelected(43)>Button 43</button>
+    <button id="44" onclick=buttonSelected(44)>Button 44</button>
+    <button id="45" onclick=buttonSelected(45)>Button 45</button>
+    <button id="46" onclick=buttonSelected(46)>Button 46</button>
+    <button id="47" onclick=buttonSelected(47)>Button 47</button>
+    <button id="48" onclick=buttonSelected(48)>Button 48</button>
+    <button id="49" onclick=buttonSelected(49)>Button 49</button><br><br>
+    <h3 id="message" style="width:fit-content; margin: 0 auto; padding:20px;"></h3>
+</body>
+</html>

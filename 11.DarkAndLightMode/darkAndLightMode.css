@@ -1,0 +1,21 @@
+body {
+    margin: 200px 450px;
+}
+.light-theme {
+    background-color: white;
+    color: black;
+}
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+ul{
+    width:fit-content;
+    text-align: center;
+}
+#btn {
+    height:fit-content;
+    width:fit-content;
+    color: grey;
+    background-color: bisque;
+}
