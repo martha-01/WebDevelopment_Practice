@@ -38,6 +38,10 @@ The main contents of this repo:
 | 4. |Sight-check|It's a tool that you can use to check your sight.|
 | 5. |Images|It is experimenting with different image-display options.|
 | 6. |Paw-park|It is a basic information page of a zoo.|
+| 8. |Lightbulb|Here you can play with switching a lightbulb on & off.|
+| 9. |DaysMonthsYears|By clicking the appropriate button, this page tells you the date.|
+|10.|TreasureHunt|This is a classic treasurehunt-game.|
+|11.|DarkAndLightMode|Here you can play with changing the background from white to black and vice versa.|
 
 :smiling_face_with_three_hearts: Thank you for stopping by! :smiling_face_with_three_hearts:\
 Have a nice day!
