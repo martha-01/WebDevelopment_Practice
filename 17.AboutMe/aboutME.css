@@ -1,0 +1,71 @@
+
+.body_mainPage{
+    background-image: url(../resources/code_backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+}
+
+.profile{
+    width: 250px;
+    box-shadow: 20px 20px 25px rgb(20, 20, 20);
+    padding-bottom: 20px;
+    margin: 50px;
+    background-color: rgba(250, 250, 250, 0.9);
+    font-weight: 700;
+    font-size: 20px;
+}
+.rounded_img {
+border-radius: 20px;
+}
+
+.circle_frame {
+border-radius: 200px;
+}
+
+.shadowimg {
+box-shadow:10px 10px 50px;
+}
+
+.frameimg {
+border-style: solid;
+border-width: 10px;
+border-color: rgba(131, 79, 9, 0.7);
+border-radius: 15px;
+padding-right: 5px;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+
+}
+button{
+    border-radius: 10px;
+    padding: 5%;
+}
+button:hover{
+    cursor:pointer;
+}
+#mainTitle{
+    margin-bottom: -100px;
+    color:antiquewhite;
+}
+.table_myHobbies{
+    width:100vw;
+}
+.tr_myHobbies{
+    height:350px;
+}
+.td_myHobbies{
+    background-size:cover;
+    text-align: center;
+    width: 30%;
+}
+.pWithinTd{
+    width:fit-content; 
+    padding:30px;
+    margin: 0 auto;
+    background-color: rgba(122, 112, 112, 0.7);
+    border-radius: 5px;
+    font-weight:500;
+    font-size:20px;
+}
