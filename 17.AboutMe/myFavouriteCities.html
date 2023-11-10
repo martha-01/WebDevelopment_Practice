@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favourite Cities</title>
+    <style>
+        body {
+            background-image: url('../resources/travelling_background.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        table {
+            margin: 0 auto;
+            background-color: rgba(50,98,112,0.7);
+            border: inset 10px rgb(33, 63, 72);
+        }
+        th, td {
+            background-color: rgb(212,171,92) ;
+            padding: 6px;
+        }
+    </style>
 </head>
 <body>
     
     <img onclick="window.open('aboutMe_MainPage.html', '_self')" src="../resources/Home.png" alt="Home-button" style="height:50px; cursor:pointer;">
     <br><h2 style="text-align: center;"><u>Hogy hova szeretek a legjobban utazni? Íme a - nem teljes - lista:</u></h2><br>
-    <table border="4" style="margin: 0 auto;">
+    <table  border="4" cellspacing="20">
         <tr>
             <th>Város:</th>
             <th>Ország:</th>
